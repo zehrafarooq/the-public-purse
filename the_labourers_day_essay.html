@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
+<title>What the Labourer's Day Buys — The Public Purse · No. 03</title>
+<meta name="description" content="An explanatory brief on Pakistan's wage purchasing power across cities, week ending 23 April 2026 — what a day of construction labour bought, and where it bought less. No. 03 of The Public Purse.">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:title" content="What the Labourer's Day Buys — Pakistan's Wage Geography">
+<meta property="og:description" content="An explanatory brief on Pakistan's wage purchasing power across cities, week ending 23 April 2026. The Public Purse · No. 03.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What the Labourer's Day Buys — Pakistan's Wage Geography">
+<meta name="twitter:description" content="An explanatory brief on Pakistan's wage purchasing power across cities, week ending 23 April 2026.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,30..100,0..1;1,9..144,300..900,30..100,0..1&family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:ital,wght@0,300..600;1,300..600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light only;
+    --paper: #F0E8D4;
+    --paper-deep: #EBE1C8;
+    --ink: #1E2A23;
+    --ink-deep: #18221C;
+    --rust: #C54A2C;
+    --sage: #7A8F73;
+    --sage-deep: #5F7359;
+    --rule: rgba(30, 42, 35, 0.16);
+    --rule-strong: rgba(30, 42, 35, 0.32);
+    --rule-dark: rgba(240, 232, 212, 0.20);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: light only !important; }
+    html, body {
+      background: #F0E8D4 !important;
+      color: #1E2A23 !important;
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+    color-scheme: light only;
+    -webkit-text-size-adjust: 100%;
+    forced-color-adjust: none;
+  }
+
+  html, body {
+    background: #F0E8D4 !important;
+    color: #1E2A23 !important;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    line-height: 1.55;
+    forced-color-adjust: none;
+  }
+
+  ::selection { background: var(--rust); color: var(--paper); }
+
+  /* ───── MASTHEAD ───── */
+  .masthead {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: rgba(240, 232, 212, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+    z-index: 100;
+    padding: 12px 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .masthead-brand { display: flex; gap: 1.2vw; align-items: center; }
+  .masthead-brand .brand-name { color: var(--rust); font-weight: 500; }
+  .masthead-brand .sep { opacity: 0.4; }
+  .masthead-brand .issue { opacity: 0.7; }
+  .masthead-right { display: flex; gap: 1.5vw; align-items: center; opacity: 0.7; }
+  .masthead-right a { color: inherit; text-decoration: none; transition: color 200ms; }
+  .masthead-right a:hover { color: var(--rust); }
+
+  .progress {
+    position: fixed; top: 0; left: 0;
+    height: 2px; background: var(--rust);
+    width: 0%; z-index: 101;
+    transition: width 100ms linear;
+  }
+
+  /* ───── HERO ───── */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 140px 6vw 100px;
+    max-width: 900px; margin: 0 auto;
+  }
+  .hero-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 40px;
+    display: flex; gap: 20px; align-items: center; flex-wrap: wrap;
+  }
+  .hero-kicker .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--rust); display: inline-block;
+  }
+  .hero-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: clamp(52px, 8vw, 110px);
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin-bottom: 40px;
+    font-variation-settings: "SOFT" 50, "WONK" 1;
+    color: #1E2A23;
+  }
+  .hero-title em {
+    font-style: italic; font-weight: 500; color: #C54A2C;
+    font-variation-settings: "SOFT" 100;
+  }
+  .hero-standfirst {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: clamp(19px, 2vw, 28px); line-height: 1.4;
+    max-width: 620px; opacity: 0.9; margin-bottom: 50px;
+    padding-top: 30px; border-top: 1px solid var(--rule);
+    font-variation-settings: "SOFT" 100;
+    color: #1E2A23;
+  }
+  .hero-meta {
+    display: flex; gap: 30px; flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    opacity: 0.65; padding-top: 20px; border-top: 1px solid var(--rule);
+    color: #1E2A23;
+  }
+  .hero-meta span strong { font-weight: 500; color: #1E2A23; }
+  .scroll-cue {
+    margin-top: 60px;
+    font-family: 'Fraunces', serif; font-style: italic;
+    font-size: 14px; opacity: 0.5; letter-spacing: 0.04em;
+  }
+  .scroll-cue::after { content: " ↓"; color: var(--rust); }
+
+  /* ───── CHAPTER OPENING ───── */
+  .chapter-open {
+    padding: 140px 6vw 60px;
+    max-width: 900px; margin: 0 auto;
+  }
+  .chapter-number {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 24px;
+    display: flex; gap: 16px; align-items: center;
+  }
+  .chapter-number .num {
+    font-family: 'Fraunces', serif; font-weight: 600; font-style: italic;
+    font-size: 20px; letter-spacing: 0; text-transform: none;
+    color: var(--rust);
+  }
+  .chapter-title {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: clamp(38px, 5.5vw, 68px);
+    line-height: 1; letter-spacing: -0.025em;
+    margin-bottom: 30px;
+    font-variation-settings: "SOFT" 50, "WONK" 1;
+    color: #1E2A23;
+  }
+  .chapter-title em {
+    font-style: italic; color: #C54A2C;
+    font-variation-settings: "SOFT" 100;
+  }
+  .chapter-deck {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: clamp(17px, 1.6vw, 22px); line-height: 1.5;
+    max-width: 600px; opacity: 0.85;
+    padding-top: 20px; border-top: 1px solid var(--rule);
+    font-variation-settings: "SOFT" 100;
+    color: #1E2A23;
+  }
+
+  /* ───── BODY PROSE ───── */
+  .prose {
+    max-width: 680px; margin: 0 auto;
+    padding: 0 6vw 60px;
+    color: #1E2A23;
+  }
+  .prose p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(17px, 1.3vw, 20px);
+    line-height: 1.65;
+    margin-bottom: 1.4em;
+    color: #1E2A23;
+  }
+  .prose p.lede::first-letter {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: 4.8em; float: left; line-height: 0.85;
+    margin-right: 0.12em; margin-top: 0.08em;
+    color: var(--rust);
+    font-variation-settings: "SOFT" 50, "WONK" 1;
+  }
+  .prose em { font-style: italic; }
+  .prose strong { font-weight: 600; color: var(--ink); }
+  .prose a {
+    color: var(--rust); text-decoration: none;
+    border-bottom: 1px solid rgba(197, 74, 44, 0.4);
+    transition: border-color 200ms;
+  }
+  .prose a:hover { border-bottom-color: var(--rust); }
+  .prose h3 {
+    font-family: 'Fraunces', serif; font-weight: 500;
+    font-size: clamp(22px, 2.2vw, 30px); line-height: 1.15;
+    letter-spacing: -0.015em;
+    margin-top: 2.5em; margin-bottom: 0.8em;
+    font-variation-settings: "SOFT" 50;
+  }
+  .prose h3 em {
+    color: var(--rust); font-style: italic;
+    font-variation-settings: "SOFT" 100;
+  }
+
+  /* ───── PULL QUOTE ───── */
+  .pull {
+    max-width: 780px; margin: 70px auto;
+    padding: 0 6vw; text-align: center;
+  }
+  .pull p {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: clamp(24px, 2.8vw, 40px); line-height: 1.25;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    font-variation-settings: "SOFT" 100;
+  }
+  .pull p::before { content: "« "; color: var(--rust); }
+  .pull p::after { content: " »"; color: var(--rust); }
+
+  /* ───── SIGNATURE NUMBER ───── */
+  .sig-block {
+    max-width: 900px; margin: 70px auto;
+    padding: 0 6vw; text-align: center;
+  }
+  .sig-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 24px;
+  }
+  .sig-number {
+    font-family: 'Fraunces', serif; font-weight: 700;
+    font-size: clamp(80px, 11vw, 180px); line-height: 0.9;
+    letter-spacing: -0.035em;
+    font-variation-settings: "SOFT" 50, "WONK" 1;
+    margin-bottom: 20px;
+  }
+  .sig-number .accent, .sig-number .unit { color: var(--rust); }
+  .sig-caption {
+    font-family: 'Fraunces', serif; font-style: italic; font-weight: 400;
+    font-size: clamp(16px, 1.4vw, 22px); line-height: 1.4;
+    max-width: 540px; margin: 0 auto;
+    opacity: 0.85;
+    font-variation-settings: "SOFT" 100;
+  }
+
+  /* ───── DATA TABLE ───── */
+  .table-wrap { max-width: 900px; margin: 60px auto; padding: 0 6vw; }
+  .table-caption {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 16px;
+  }
+  .table-title {
+    font-family: 'Fraunces', serif; font-weight: 500;
+    font-size: clamp(18px, 1.7vw, 24px); letter-spacing: -0.01em;
+    margin-bottom: 24px;
+    font-variation-settings: "SOFT" 50;
+  }
+  table {
+    width: 100%; border-collapse: collapse;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(14px, 1.08vw, 17px);
+  }
+  table th {
+    font-family: 'JetBrains Mono', monospace; font-weight: 400;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    text-align: left; padding: 12px 14px 12px 0;
+    border-bottom: 2px solid var(--rule-strong);
+    color: var(--rust); vertical-align: bottom;
+  }
+  table th.num { text-align: right; padding-right: 0; padding-left: 14px; }
+  table td {
+    padding: 10px 14px 10px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top; line-height: 1.4;
+  }
+  table td.num {
+    text-align: right; padding-right: 0; padding-left: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(13px, 1vw, 15px);
+    letter-spacing: 0.02em; white-space: nowrap;
+  }
+  table td.num .rust { color: var(--rust); }
+  table td.num .sage { color: var(--sage-deep); }
+  table tr:last-child td { border-bottom: none; }
+  table tfoot td {
+    border-top: 2px solid var(--rule-strong);
+    border-bottom: none; font-weight: 600;
+    padding-top: 12px;
+  }
+  table tfoot td.num { font-weight: 600; color: var(--rust); }
+  .table-source {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    opacity: 0.55; margin-top: 14px; line-height: 1.6;
+  }
+
+  table tr.group td {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--rust);
+    padding-top: 22px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+  table tr.subtotal td {
+    border-top: 1px solid var(--rule-strong);
+    border-bottom: 1px solid var(--rule-strong);
+    font-style: italic;
+    background: rgba(30, 42, 35, 0.03);
+  }
+  table tr.subtotal td.num { color: var(--rust); font-weight: 600; }
+
+  /* Province dot tag */
+  .prov {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: 1px;
+  }
+  .prov.ict { background: #1E2A23; }
+  .prov.punjab { background: var(--sage-deep); }
+  .prov.sindh { background: var(--rust); }
+  .prov.kp { background: #B57F4D; }
+  .prov.balochistan { background: #6B8AAB; }
+
+  /* ───── DEFINITION BLOCK ───── */
+  .definitions {
+    max-width: 760px; margin: 40px auto 60px;
+    padding: 30px 6vw;
+    background: var(--paper-deep);
+    border-left: 3px solid var(--rust);
+  }
+  .definitions-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--rust); margin-bottom: 16px;
+  }
+  .definitions dl { margin: 0; }
+  .definitions dt {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: clamp(16px, 1.25vw, 19px);
+    margin-top: 14px;
+    font-variation-settings: "SOFT" 50;
+  }
+  .definitions dt:first-child { margin-top: 0; }
+  .definitions dd {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(14px, 1.1vw, 17px); line-height: 1.55;
+    margin-left: 0; margin-top: 3px; opacity: 0.9;
+  }
+
+  /* Province legend */
+  .legend {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 0 6vw;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.75;
+  }
+  .legend span { display: flex; align-items: center; gap: 8px; }
+
+  /* ───── INLINE STAT ───── */
+  .stat {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.92em; letter-spacing: 0.02em;
+    color: var(--rust); font-weight: 500;
+  }
+
+  /* ───── CLOSING ───── */
+  .closing { max-width: 900px; margin: 100px auto 40px; padding: 0 6vw; }
+  .closing-rule { width: 60px; height: 3px; background: var(--rust); margin-bottom: 40px; }
+  .closing p {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(17px, 1.3vw, 20px); line-height: 1.65;
+    margin-bottom: 1.3em;
+  }
+  .closing em { font-style: italic; }
+
+  .byline {
+    max-width: 900px; margin: 60px auto;
+    padding: 40px 6vw;
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;
+  }
+  .byline a { color: var(--rust); text-decoration: none; }
+
+  /* ───── GLOSSARY ───── */
+  .glossary {
+    background: var(--ink); color: var(--paper);
+    padding: 100px 0 80px; margin-top: 80px;
+  }
+  .glossary, .glossary * { color: var(--paper); }
+  .glossary .inner { max-width: 900px; margin: 0 auto; padding: 0 6vw; }
+  .glossary h2 {
+    font-family: 'Fraunces', serif; font-weight: 600;
+    font-size: clamp(34px, 4.5vw, 56px); line-height: 1;
+    letter-spacing: -0.025em; margin-bottom: 40px;
+    font-variation-settings: "SOFT" 50, "WONK" 1;
+  }
+  .glossary h2 em {
+    font-style: italic; color: var(--rust) !important;
+    font-variation-settings: "SOFT" 100;
+  }
+  .glossary h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--rust) !important;
+    margin-top: 50px; margin-bottom: 24px;
+    padding-top: 30px; border-top: 1px solid var(--rule-dark);
+  }
+  .glossary dl dt {
+    font-family: 'Fraunces', serif; font-weight: 500;
+    font-size: clamp(16px, 1.25vw, 19px);
+    margin-top: 20px;
+    font-variation-settings: "SOFT" 50;
+  }
+  .glossary dl dt:first-child { margin-top: 0; }
+  .glossary dl dd {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(14px, 1.1vw, 17px); line-height: 1.55;
+    margin-left: 0; margin-top: 3px; opacity: 0.9;
+  }
+  .glossary .sources {
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(13px, 1vw, 16px); line-height: 1.7;
+    opacity: 0.85;
+  }
+  .glossary .sources em { font-style: italic; color: var(--sage) !important; }
+
+  .footer {
+    background: var(--ink-deep); color: var(--paper);
+    padding: 50px 0 40px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  }
+  .footer, .footer * { color: var(--paper); }
+  .footer .inner {
+    max-width: 900px; margin: 0 auto; padding: 0 6vw;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 20px; opacity: 0.7;
+  }
+  .footer a {
+    color: var(--paper); text-decoration: none;
+    border-bottom: 1px solid var(--rule-dark);
+  }
+  .footer a:hover { color: var(--rust) !important; }
+
+  /* ───── RESPONSIVE ───── */
+  @media (max-width: 720px) {
+    .hero { padding-top: 100px; padding-bottom: 60px; }
+    .chapter-open { padding-top: 80px; padding-bottom: 30px; }
+    .masthead { padding: 10px 5vw; }
+    .masthead-right { display: none; }
+    .table-wrap { padding: 0 4vw; overflow-x: auto; }
+    table { min-width: 500px; }
+    .prose, .closing { padding-left: 5vw; padding-right: 5vw; }
+    .glossary { padding: 60px 0 50px; }
+    .glossary .inner { padding: 0 5vw; }
+  }
+
+  body { opacity: 0; transition: opacity 600ms ease; }
+  body.ready { opacity: 1; }
+</style>
+</head>
+<body>
+
+<!-- ───── MASTHEAD ───── -->
+<div class="progress" id="progress"></div>
+<div class="masthead">
+  <div class="masthead-brand">
+    <span class="brand-name">The Public Purse</span>
+    <span class="sep">·</span>
+    <span class="issue">No. 03</span>
+  </div>
+  <div class="masthead-right">
+    <a href="#hero">Top</a>
+    <a href="#chapter-5">Pricing</a>
+    <a href="#glossary">Sources</a>
+  </div>
+</div>
+
+<!-- ───── HERO ───── -->
+<section class="hero" id="hero">
+  <div class="hero-kicker">
+    <span>No. 03</span>
+    <span class="dot"></span>
+    <span>Wages · Cost of Living</span>
+    <span class="dot"></span>
+    <span>April MMXXVI</span>
+  </div>
+
+  <h1 class="hero-title">What the Labourer's<br><em>Day Buys.</em></h1>
+
+  <p class="hero-standfirst">An explanatory brief on Pakistan's wage purchasing power, week ending 23 April 2026 — what a day of construction labour bought across seventeen cities, where it bought less, and what the geography of that variation reveals about the structure of the economy.</p>
+
+  <div class="hero-meta">
+    <span>By <strong>Zehra Farooq</strong></span>
+    <span>Reference week · <strong>23 April 2026</strong></span>
+    <span>Reading time · <strong>~14 minutes</strong></span>
+  </div>
+
+  <div class="scroll-cue">Scroll to begin</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CHAPTER I — THE NUMBERS                             -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="chapter-open" id="chapter-1">
+  <div class="chapter-number">
+    <span class="num">I</span>
+    <span>The numbers that describe the system</span>
+  </div>
+  <h2 class="chapter-title">What Pakistan <em>weighs</em>,<br>and what it <em>pays for it.</em></h2>
+  <p class="chapter-deck">Sensitive Price Indicator. Essential commodity prices. Daily wage rates. City coverage. Five terms that frame every conversation about Pakistani household cost-of-living — defined, then populated with the figures from the PBS bulletin for the week ending 23 April 2026.</p>
+</section>
+
+<div class="prose">
+  <p class="lede">Pakistan's high-frequency price data is published in a single weekly bulletin. The Sensitive Price Indicator — usually called by its abbreviation, SPI — is released every Friday by the Pakistan Bureau of Statistics. It tracks the price of fifty-one essential commodities across seventeen cities, reporting minimum, average, and maximum prices observed during the week. It also tracks daily wage rates for five construction trades across the same seventeen cities. The bulletin runs to four pages. It is the most granular, most regular cost-of-living dataset Pakistan publishes.</p>
+
+  <p>The price of a 20-kilogram bag of wheat flour in Lahore on 23 April 2026 was Rs 1,810. The same bag in Sukkur was Rs 2,040. A construction labourer in Lahore that week earned Rs 1,747 a day. A construction labourer in Sukkur earned Rs 900. The two ratios — of prices, and of wages — do not move together. Their interaction across cities and across items is the subject of this brief.</p>
+
+  <h3>The five terms, defined</h3>
+
+  <p><strong>Sensitive Price Indicator (SPI)</strong> is the weekly bulletin in which the figures used here are reported. PBS publishes it under the authority of the Federal Bureau of Statistics Act, on the Friday following the close of the reference week.</p>
+
+  <p><strong>Essential commodity</strong> is any of the fifty-one items in the SPI basket — staples, kitchen essentials, energy items, and a small number of durables. The basket includes wheat flour, cooking oil, vegetable ghee, milk, mutton, beef, pulses, vegetables, eggs, sugar, tea, salt, soap, matches, electricity (per unit), gas (per MMBTU), petrol, diesel, and LPG cylinders.</p>
+
+  <p><strong>City average price</strong> is the mean of minimum, average, and maximum observations recorded in each city during the reference week. PBS surveys outlets across each city and reports the city-level average in Appendix-A of the bulletin.</p>
+
+  <p><strong>Daily wage rate</strong> is the prevailing rate paid to a worker in the relevant trade for one day's work in the reference city, surveyed and reported in Appendix-B Section D of the same bulletin. The five trades surveyed are painter, mason, labourer, plumber, and electrician. The wage figures are observational, not collectively bargained.</p>
+
+  <p><strong>Days of work</strong>, as used in this brief, is the ratio of an item's price to a labourer's daily wage. It expresses, in days of construction labour, the cost of acquiring one unit of the item. A figure of <span class="stat">1.04 days</span> means the worker must labour for one day and one hour to afford the item; a figure of <span class="stat">2.27 days</span> means two days and roughly two and a half hours.</p>
+
+  <p>For the week ending 23 April 2026, the bulletin returns the figures below.</p>
+</div>
+
+<div class="table-wrap">
+  <div class="table-caption">Table 1.1</div>
+  <div class="table-title">Headline indicators, Pakistan SPI bulletin, week ending 23 April 2026</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Indicator</th>
+        <th class="num">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Cities surveyed</td><td class="num">17</td></tr>
+      <tr><td>Essential commodities tracked</td><td class="num">51</td></tr>
+      <tr><td>Construction trades surveyed for wages</td><td class="num">5</td></tr>
+      <tr><td>National average labourer wage</td><td class="num">Rs 1,274 / day</td></tr>
+      <tr><td>Highest labourer wage (Lahore)</td><td class="num"><span class="rust">Rs 1,747 / day</span></td></tr>
+      <tr><td>Lowest labourer wage (Sukkur, Larkana)</td><td class="num">Rs 900 / day</td></tr>
+      <tr><td>Wage spread (high ÷ low ratio)</td><td class="num"><span class="rust">1.94×</span></td></tr>
+      <tr><td>Wheat flour 20kg bag — lowest city price</td><td class="num">Rs 1,810 (Lahore, Sargodha)</td></tr>
+      <tr><td>Wheat flour 20kg bag — highest city price</td><td class="num">Rs 2,350 (Quetta)</td></tr>
+      <tr><td>Wheat flour price spread (high ÷ low)</td><td class="num">1.30×</td></tr>
+    </tbody>
+  </table>
+  <div class="table-source">Source — Pakistan Bureau of Statistics, Sensitive Price Indicator weekly bulletin, week ending 23 April 2026 (Appendix-A and Appendix-B Section D). Figures rounded.</div>
+</div>
+
+<div class="prose">
+  <p>Two observations follow directly from the table. First, the variation in labourer wages across cities, at <span class="stat">1.94×</span>, exceeds the variation in wheat flour prices across cities, at <span class="stat">1.30×</span>. The same item moves through space at substantially smaller multiples than the wage of the worker who buys it. Second, the cities reporting the lowest labourer wages — Sukkur and Larkana, both Rs 900 per day — do not report the lowest item prices. The cities at the bottom of the wage ladder do not enjoy a corresponding price discount.</p>
+
+  <p>The arithmetic of these two observations is the starting point of everything that follows: in a country where prices vary across cities by ratios under 1.5×, and wages vary across cities by ratios approaching 2×, the geography of purchasing power is governed primarily by the wage side. The next chapter takes the calculation a step further, and applies it to a basket.</p>
+</div>
+
+<div class="sig-block">
+  <div class="sig-label">Pakistan SPI bulletin · 23 April 2026</div>
+  <div class="sig-number">1.94<span class="unit">×</span></div>
+  <p class="sig-caption">The ratio of the highest to the lowest construction labourer daily wage across Pakistan's seventeen surveyed cities. <span class="stat">Larger</span> than the spread of any major item in the basket.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CHAPTER II — THE BASKET                              -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="chapter-open" id="chapter-2">
+  <div class="chapter-number">
+    <span class="num">II</span>
+    <span>How the household basket is structured</span>
+  </div>
+  <h2 class="chapter-title">Eight items,<br><em>one working week.</em></h2>
+  <p class="chapter-deck">Out of the fifty-one items the SPI reports, eight describe most of a working household's weekly outlay. Sized into realistic single-purchase quantities, they form a basket whose total cost is in the same order of magnitude as a labourer's weekly take-home.</p>
+</section>
+
+<div class="prose">
+  <p>The SPI basket of fifty-one items is not designed for direct comparison against wages. Items are reported in their natural retail units — one kilogram of beef, one dozen eggs, one litre of petrol — which are not the units in which a household buys them. To convert the bulletin's per-unit prices into something a working family would recognise, this brief sizes each item to a typical single-purchase quantity.</p>
+
+  <p>Eight items are selected. They are not the only items a household buys; they are the items that, together, capture the majority of weekly outlay for a Pakistani working household, on the evidence of household expenditure surveys.</p>
+
+  <h3>The basket and its sizing</h3>
+
+  <p>The eight items, with their sizing rationale, are: a 20-kilogram bag of wheat flour, equivalent to roughly one month's atta for a family of five; a 5-litre tin of cooking oil, the standard retail size; one kilogram of mutton, a single occasion's meat; ten litres of motor petrol, equivalent to one motorbike fill or part of a small-vehicle fill; five litres of fresh milk, equivalent to a working family's weekly consumption; two dozen eggs, equivalent to a working family's weekly consumption; one kilogram of vegetable ghee, equivalent to roughly one week's cooking-fat use; and one kilogram of dry lentils, the standard retail purchase.</p>
+
+  <p>For each item, the city-level average price reported in Appendix-A of the SPI is multiplied by the quantity multiplier above. The product is the weekly basket cost in that city. Dividing that cost by the city's labourer daily wage gives the days of work required to acquire it.</p>
+
+  <p>The basket is deliberately sparse. A more comprehensive basket would add rent, fuel for cooking, electricity bill, school fees, transport fares, and clothing. Some of these are reported in the SPI (electricity per unit, LPG per cylinder, gas per MMBTU); others are not. The eight items chosen here are limited to those for which the SPI provides direct, city-level price observations on the reference date. Any household basket constructed from these items will be conservative: it understates the total purchase burden by excluding rent, services, and durables.</p>
+</div>
+
+<div class="pull">
+  <p>The eight items chosen here capture most of a working household's weekly outlay. None of them captures the rent, the bills, or the school fees.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CHAPTER III — LAHORE AND SUKKUR                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="chapter-open" id="chapter-3">
+  <div class="chapter-number">
+    <span class="num">III</span>
+    <span>The two-city case</span>
+  </div>
+  <h2 class="chapter-title">Lahore and Sukkur,<br><em>same basket.</em></h2>
+  <p class="chapter-deck">Pakistan's seventeen surveyed cities range across nearly the full spread of wages and prices. Two — Lahore at the top of the wage distribution, Sukkur near the bottom — frame the argument. Their baskets cost almost the same. Their workers earn almost twice as differently.</p>
+</section>
+
+<div class="prose">
+  <p>Of the seventeen cities surveyed, Lahore reports the highest construction labourer daily wage at <span class="stat">Rs 1,747</span>. Sukkur, in upper Sindh, reports one of the lowest at <span class="stat">Rs 900</span>. The wage gap between them, expressed as a ratio, is <span class="stat">1.94×</span>. The gap expressed in level terms is Rs 847 per day, or about USD 3 per day.</p>
+
+  <p>The eight-item basket priced for both cities, on the reference week, returns the figures below.</p>
+</div>
+
+<div class="table-wrap">
+  <div class="table-caption">Table 3.1</div>
+  <div class="table-title">The eight-item basket, Lahore and Sukkur, week ending 23 April 2026</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Item</th>
+        <th class="num">Lahore<br>price</th>
+        <th class="num">Sukkur<br>price</th>
+        <th class="num">Lahore<br>days</th>
+        <th class="num">Sukkur<br>days</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Wheat flour, 20 kg bag</td><td class="num">Rs 1,810</td><td class="num">Rs 2,040</td><td class="num">1.04</td><td class="num"><span class="rust">2.27</span></td></tr>
+      <tr><td>Cooking oil, 5 L tin</td><td class="num">Rs 3,020</td><td class="num">Rs 2,970</td><td class="num">1.73</td><td class="num"><span class="rust">3.30</span></td></tr>
+      <tr><td>Mutton, 1 kg</td><td class="num">Rs 2,728</td><td class="num">Rs 2,000</td><td class="num">1.56</td><td class="num"><span class="rust">2.22</span></td></tr>
+      <tr><td>Petrol, 10 L</td><td class="num">Rs 3,665</td><td class="num">Rs 3,682</td><td class="num">2.10</td><td class="num"><span class="rust">4.09</span></td></tr>
+      <tr><td>Milk, 5 L</td><td class="num">Rs 1,009</td><td class="num">Rs 1,000</td><td class="num">0.58</td><td class="num"><span class="rust">1.11</span></td></tr>
+      <tr><td>Eggs, 2 dozen</td><td class="num">Rs 492</td><td class="num">Rs 500</td><td class="num">0.28</td><td class="num">0.56</td></tr>
+      <tr><td>Vegetable ghee, 1 kg</td><td class="num">Rs 595</td><td class="num">Rs 590</td><td class="num">0.34</td><td class="num">0.66</td></tr>
+      <tr><td>Lentils, 1 kg</td><td class="num">Rs 245</td><td class="num">Rs 220</td><td class="num">0.14</td><td class="num">0.24</td></tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><em>Basket total</em></td>
+        <td class="num">Rs 13,564</td>
+        <td class="num">Rs 13,002</td>
+        <td class="num">7.77</td>
+        <td class="num"><span class="rust">14.45</span></td>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="table-source">Source — PBS SPI bulletin, week ending 23 April 2026. City-level average prices from Appendix-A; city-level construction labourer daily wages from Appendix-B Section D. Days of work = item price × quantity multiplier ÷ daily wage.</div>
+</div>
+
+<div class="prose">
+  <p>Two observations follow from the table.</p>
+
+  <p>First, in rupee terms the two baskets differ by less than five per cent. The Lahore basket totals <span class="stat">Rs 13,564</span>; the Sukkur basket totals <span class="stat">Rs 13,002</span>. The Sukkur basket is in fact slightly cheaper — by Rs 562, or about four per cent — driven by lower mutton, slightly cheaper wheat flour relative to Lahore, and modestly cheaper produce. On the price side, the two cities are almost equivalent.</p>
+
+  <p>Second, in days-of-work terms the two baskets diverge sharply. The Lahore labourer must work <span class="stat">7.77 days</span> to acquire the basket. The Sukkur labourer must work <span class="stat">14.45 days</span>. The ratio between them is <span class="stat">1.86×</span> — almost identical to the wage ratio of 1.94×. The basket-cost ratio is 0.96×. The conclusion is arithmetic. The work-burden gap is, very nearly, the wage gap. Prices contribute almost nothing to it.</p>
+
+  <p>The same calculation, run for any pair of cities in the SPI panel, returns broadly the same finding. The work-burden of an essential basket varies across Pakistan primarily because wages vary, not because prices do.</p>
+</div>
+
+<div class="pull">
+  <p>The Lahore and Sukkur baskets cost nearly the same. The Sukkur labourer works almost twice as many days for it.</p>
+</div>
+
+<div class="sig-block">
+  <div class="sig-label">Sukkur ÷ Lahore basket work-burden ratio</div>
+  <div class="sig-number">1.86<span class="unit">×</span></div>
+  <p class="sig-caption">Days of construction labour required to acquire the same eight-item basket. The Sukkur labourer works <span class="stat">86 per cent more</span> than the Lahore labourer. The basket itself costs <span class="stat">4 per cent less</span>.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CHAPTER IV — THE SEVENTEEN-CITY PICTURE              -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="chapter-open" id="chapter-4">
+  <div class="chapter-number">
+    <span class="num">IV</span>
+    <span>Seventeen cities, ranked</span>
+  </div>
+  <h2 class="chapter-title">The geography<br><em>of the burden.</em></h2>
+  <p class="chapter-deck">Sorted by total basket work-burden, the seventeen cities arrange themselves into a recognisable geography. Punjab, Islamabad, and Karachi cluster at the top of the table. Sindh interior — Sukkur, Larkana — anchors the bottom. The pattern holds across nearly every individual item.</p>
+</section>
+
+<div class="prose">
+  <p>The eight-item basket priced for all seventeen cities, with each city's labourer wage applied, returns the table below. Cities are ordered by the total days-of-work figure. Province codes follow each city name.</p>
+</div>
+
+<div class="table-wrap">
+  <div class="table-caption">Table 4.1</div>
+  <div class="table-title">Eight-item basket work-burden, seventeen cities, week ending 23 April 2026</div>
+  <table>
+    <thead>
+      <tr>
+        <th>City</th>
+        <th class="num">Wage<br>(Rs/day)</th>
+        <th class="num">Atta<br>(20kg)</th>
+        <th class="num">Petrol<br>(10L)</th>
+        <th class="num">Cooking<br>oil (5L)</th>
+        <th class="num">Mutton<br>(1kg)</th>
+        <th class="num">Total<br>basket</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="prov punjab"></span>Lahore</td><td class="num">1,747</td><td class="num">1.04</td><td class="num">2.10</td><td class="num">1.73</td><td class="num">1.56</td><td class="num"><span class="sage">7.77</span></td></tr>
+      <tr><td><span class="prov sindh"></span>Karachi</td><td class="num">1,478</td><td class="num">1.48</td><td class="num">2.49</td><td class="num">2.01</td><td class="num">1.62</td><td class="num"><span class="sage">9.62</span></td></tr>
+      <tr><td><span class="prov ict"></span>Islamabad</td><td class="num">1,500</td><td class="num">1.52</td><td class="num">2.46</td><td class="num">2.00</td><td class="num">1.89</td><td class="num"><span class="sage">9.83</span></td></tr>
+      <tr><td><span class="prov punjab"></span>Sialkot</td><td class="num">1,500</td><td class="num">1.27</td><td class="num">2.46</td><td class="num">2.01</td><td class="num">1.60</td><td class="num">9.84</td></tr>
+      <tr><td><span class="prov punjab"></span>Gujranwala</td><td class="num">1,500</td><td class="num">1.35</td><td class="num">2.46</td><td class="num">2.00</td><td class="num">1.53</td><td class="num">9.91</td></tr>
+      <tr><td><span class="prov punjab"></span>Rawalpindi</td><td class="num">1,500</td><td class="num">1.43</td><td class="num">2.45</td><td class="num">2.00</td><td class="num">1.86</td><td class="num">10.20</td></tr>
+      <tr><td><span class="prov balochistan"></span>Quetta</td><td class="num">1,449</td><td class="num">1.62</td><td class="num">2.54</td><td class="num">2.05</td><td class="num">1.62</td><td class="num">10.30</td></tr>
+      <tr><td><span class="prov punjab"></span>Sargodha</td><td class="num">1,433</td><td class="num">1.26</td><td class="num">2.59</td><td class="num">2.11</td><td class="num">1.49</td><td class="num">10.34</td></tr>
+      <tr><td><span class="prov punjab"></span>Faisalabad</td><td class="num">1,266</td><td class="num">1.66</td><td class="num">2.91</td><td class="num">2.35</td><td class="num">1.74</td><td class="num">11.85</td></tr>
+      <tr><td><span class="prov balochistan"></span>Khuzdar</td><td class="num">1,232</td><td class="num">1.79</td><td class="num">2.99</td><td class="num">2.40</td><td class="num">1.94</td><td class="num">12.62</td></tr>
+      <tr><td><span class="prov kp"></span>Peshawar</td><td class="num">1,200</td><td class="num">1.93</td><td class="num">3.07</td><td class="num">2.48</td><td class="num">1.89</td><td class="num">13.06</td></tr>
+      <tr><td><span class="prov sindh"></span>Hyderabad</td><td class="num">1,024</td><td class="num">2.15</td><td class="num">3.62</td><td class="num">2.90</td><td class="num">2.18</td><td class="num"><span class="rust">13.78</span></td></tr>
+      <tr><td><span class="prov punjab"></span>Multan</td><td class="num">1,032</td><td class="num">1.88</td><td class="num">3.57</td><td class="num">2.88</td><td class="num">2.33</td><td class="num"><span class="rust">14.13</span></td></tr>
+      <tr><td><span class="prov kp"></span>Bannu</td><td class="num">1,000</td><td class="num">2.23</td><td class="num">3.69</td><td class="num">3.10</td><td class="num">1.80</td><td class="num"><span class="rust">14.20</span></td></tr>
+      <tr><td><span class="prov punjab"></span>Bahawalpur</td><td class="num">1,000</td><td class="num">2.07</td><td class="num">3.71</td><td class="num">3.11</td><td class="num">2.27</td><td class="num"><span class="rust">14.32</span></td></tr>
+      <tr><td><span class="prov sindh"></span>Sukkur</td><td class="num">900</td><td class="num">2.27</td><td class="num">4.09</td><td class="num">3.30</td><td class="num">2.22</td><td class="num"><span class="rust">14.45</span></td></tr>
+      <tr><td><span class="prov sindh"></span>Larkana</td><td class="num">900</td><td class="num">2.22</td><td class="num">4.09</td><td class="num">3.46</td><td class="num">2.37</td><td class="num"><span class="rust">14.96</span></td></tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td><em>National average</em></td>
+        <td class="num">1,274</td>
+        <td class="num">1.71</td>
+        <td class="num">3.02</td>
+        <td class="num">2.46</td>
+        <td class="num">1.88</td>
+        <td class="num">11.83</td>
+      </tr>
+    </tfoot>
+  </table>
+  <div class="table-source">Source — PBS SPI bulletin, week ending 23 April 2026. Days of work for individual items shown for atta, petrol, cooking oil and mutton; the Total basket column sums all eight items in the basket. Cities ordered by total basket work-burden, ascending.</div>
+</div>
+
+<div class="legend">
+  <span><span class="prov ict"></span>Islamabad Capital Territory</span>
+  <span><span class="prov punjab"></span>Punjab</span>
+  <span><span class="prov sindh"></span>Sindh</span>
+  <span><span class="prov kp"></span>Khyber Pakhtunkhwa</span>
+  <span><span class="prov balochistan"></span>Balochistan</span>
+</div>
+
+<div class="prose">
+  <p>The pattern in the table is geographic rather than statistical. The top of the ranking — the cities at which the basket commands the fewest days of labour — is dominated by Punjab and the federal capital. Lahore at 7.77 days; Karachi at 9.62; Islamabad at 9.83; Sialkot, Gujranwala, Rawalpindi clustered around ten. The middle band — between ten and thirteen days — runs through Quetta, Sargodha, Faisalabad, Khuzdar, and Peshawar. The bottom of the ranking — the cities at which the basket commands the greatest work — is dominated by Sindh outside Karachi, southern Punjab, and Khyber Pakhtunkhwa outside Peshawar. Hyderabad at 13.78; Multan at 14.13; Bannu at 14.20; Bahawalpur at 14.32; Sukkur at 14.45; Larkana at 14.96.</p>
+
+  <p>The spread between the city at the top of the ranking and the city at the bottom is <span class="stat">1.93×</span>. A Larkana labourer works 93 per cent more days for the same basket than a Lahore labourer. Within Sindh, the spread between Karachi and Larkana is <span class="stat">1.55×</span>; within Punjab, between Lahore and Bahawalpur, it is <span class="stat">1.84×</span>. The variation is not principally between provinces but within them.</p>
+
+  <h3>The mechanism behind the ranking</h3>
+
+  <p>Three structural features explain the pattern. First, labour markets in Pakistan are deeply local. Construction wages reflect the local supply of unskilled labour relative to local demand for it; in cities with large agricultural hinterlands and limited industrial employment alternatives, construction wages settle low. Second, item prices, by contrast, are set by national wholesale chains for processed goods (cooking oil, ghee, eggs, milk powder), by import-parity formulas for fuel, and by provincial procurement and federal support for wheat. None of these national mechanisms generates city-level price discounts that match local wage gaps. Third, agricultural commodities — wheat, vegetables, milk — show some city-level price variation reflecting local supply, but the variation is modest relative to wage variation.</p>
+
+  <p>The result is the table above: prices vary across cities at single-digit-percentage scales; wages vary at scales approaching two-fold. The resulting work-burden geography reflects the wage axis.</p>
+</div>
+
+<div class="sig-block">
+  <div class="sig-label">Top-to-bottom city basket ratio · 23 April 2026</div>
+  <div class="sig-number">1.93<span class="unit">×</span></div>
+  <p class="sig-caption">Larkana's labourer works <span class="stat">93 per cent more days</span> for the eight-item basket than Lahore's labourer. The basket itself, in rupee terms, varies across cities by less than thirteen per cent.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CHAPTER V — WHAT SETS THE PRICE                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="chapter-open" id="chapter-5">
+  <div class="chapter-number">
+    <span class="num">V</span>
+    <span>What sets the price</span>
+  </div>
+  <h2 class="chapter-title">Three categories,<br><em>three burdens.</em></h2>
+  <p class="chapter-deck">The same administered, captured, and competitive grouping that organises Pakistan's price-trajectory data — examined in <em>The Public Purse · No. 02</em> — applies cleanly to the level data of a single SPI week. National medians, computed by group, separate by a factor of nine.</p>
+</section>
+
+<div class="prose">
+  <p>The brief preceding this one — <em>The Three Inflations</em> — divided Pakistan's CPI sub-indices into three groups by who effectively sets the price. Administered prices are notified by regulators and ministries. Captured prices are set by private-sector actors operating in markets with structurally weak competition. Competitive prices emerge from markets with many sellers, low entry barriers, and import or export discipline. The grouping is the author's, and the boundaries are debatable. Applied to the level data of a single SPI week, rather than the trajectory data of a decade, the grouping produces a similarly ordered separation.</p>
+
+  <p>For each of fifteen items in the SPI basket — five administered, six captured, four competitive — the national-average city price is divided by the national-average labourer wage to give a national days-of-work figure. The medians by group return the figures below.</p>
+</div>
+
+<div class="table-wrap">
+  <div class="table-caption">Table 5.1</div>
+  <div class="table-title">Days of work to acquire each item, by pricing regime, national average, week ending 23 April 2026</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Item · sized to typical purchase</th>
+        <th class="num">Days of work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="group"><td colspan="2">Administered · state-set</td></tr>
+      <tr><td>Wheat flour, 20 kg bag</td><td class="num">1.71</td></tr>
+      <tr><td>LPG cylinder, one</td><td class="num"><span class="rust">3.89</span></td></tr>
+      <tr><td>Petrol, 10 L tankful</td><td class="num"><span class="rust">2.89</span></td></tr>
+      <tr><td>Diesel, 10 L tankful</td><td class="num"><span class="rust">2.79</span></td></tr>
+      <tr><td>Electricity, 200 unit bill</td><td class="num">1.17</td></tr>
+      <tr class="subtotal"><td><em>Group median</em></td><td class="num"><span class="rust">2.79</span></td></tr>
+
+      <tr class="group"><td colspan="2">Captured · weak competition</td></tr>
+      <tr><td>Cooking oil, 5 L tin</td><td class="num"><span class="rust">2.36</span></td></tr>
+      <tr><td>Vegetable ghee, 2.5 kg tin</td><td class="num">1.19</td></tr>
+      <tr><td>Mutton, 1 kg</td><td class="num">1.83</td></tr>
+      <tr><td>Beef, 1 kg</td><td class="num">0.97</td></tr>
+      <tr><td>Powdered milk, 390 g pack</td><td class="num">0.90</td></tr>
+      <tr><td>Milk, 5 L family week</td><td class="num">0.82</td></tr>
+      <tr class="subtotal"><td><em>Group median</em></td><td class="num">1.08</td></tr>
+
+      <tr class="group"><td colspan="2">Competitive</td></tr>
+      <tr><td>Eggs, 2 dozen</td><td class="num">0.39</td></tr>
+      <tr><td>Lentils (masoor), 1 kg</td><td class="num">0.21</td></tr>
+      <tr><td>Lentils (moong), 1 kg</td><td class="num">0.31</td></tr>
+      <tr><td>Potatoes, 5 kg</td><td class="num">0.14</td></tr>
+      <tr><td>Onions, 5 kg</td><td class="num">0.27</td></tr>
+      <tr><td>Bananas, 2 dozen</td><td class="num">0.31</td></tr>
+      <tr><td>Long cloth, 5 m for one outfit</td><td class="num"><span class="rust">2.71</span></td></tr>
+      <tr class="subtotal"><td><em>Group median</em></td><td class="num"><span class="sage">0.31</span></td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td><em>National-average labourer wage</em></td><td class="num">Rs 1,274 / day</td></tr>
+    </tfoot>
+  </table>
+  <div class="table-source">Source — PBS SPI bulletin, week ending 23 April 2026. National-average prices are simple means across the seventeen surveyed cities. Quantities scaled to typical household single-purchase events. Categorisation is the author's, following the framework in The Public Purse No. 02.</div>
+</div>
+
+<div class="prose">
+  <p>The medians of the three groups order themselves clearly. The administered group, at <span class="stat">2.79 days</span> per typical purchase, is the heaviest. The captured group, at <span class="stat">1.08 days</span>, is roughly two and a half times lighter. The competitive group, at <span class="stat">0.31 days</span>, is approximately nine times lighter than the administered group. The ratio between the heaviest and lightest groups is <span class="stat">9.0×</span>.</p>
+
+  <p>Two observations follow. First, the level data corroborate the trajectory data from No. 02 — administered prices and captured prices both impose larger burdens than competitive prices. Second, on this single-week snapshot the administered median exceeds the captured median, the reverse of the trajectory finding. The reasons are mechanical. The administered category here includes LPG and motor fuel, which are import-parity items priced at world levels; over a decade they cumulated less than the captured edible-oils group, but at any given level they remain among the heaviest single purchases a household makes. The captured category, conversely, includes items like fresh milk and powdered milk that have small per-unit prices despite high cumulative growth.</p>
+
+  <p>The two findings are consistent. The trajectory shows where prices have run furthest. The level shows where prices currently stand. They answer different questions.</p>
+</div>
+
+<div class="pull">
+  <p>Where there is competition, a labourer's day buys nine times more than where the state administers and the cartels capture.</p>
+</div>
+
+<div class="sig-block">
+  <div class="sig-label">Administered ÷ competitive median ratio</div>
+  <div class="sig-number">9.0<span class="unit">×</span></div>
+  <p class="sig-caption">A typical state-administered purchase costs nine times more days of labour than a typical competitive-market purchase. Pakistan's wage geography reflects the gap.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CHAPTER VI — WHAT MEASUREMENT MISSES                 -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="chapter-open" id="chapter-6">
+  <div class="chapter-number">
+    <span class="num">VI</span>
+    <span>What the measurement misses</span>
+  </div>
+  <h2 class="chapter-title">Three frames<br><em>outside the bulletin.</em></h2>
+  <p class="chapter-deck">The SPI is methodologically careful within its scope. Three specific design choices, however, mean the figures presented in this brief understate the work-burden of essential household consumption for distinct subsets of the workforce.</p>
+</section>
+
+<div class="prose">
+  <p>This chapter does not argue that the SPI is wrong. It is constructed for a specific purpose — high-frequency tracking of essential prices — and it does that consistently. It does describe three design choices that cause specific elements of household experience to fall outside the measurement.</p>
+
+  <h3>Snapshot, not trajectory</h3>
+
+  <p>The figures in this brief are drawn from a single SPI bulletin, the week ending 23 April 2026. Each weekly bulletin is an instantaneous reading. A days-of-work calculation for any other week would return different values; the wage and price levels both move week to week. The findings reported here describe the structure of Pakistan's wage-price geography on one specific date. They do not describe whether the structure is widening, narrowing, or stable across time. Constructing a multi-year trajectory would require parsing the historical SPI bulletin archive, which is published weekly and accessible from the PBS website but is not included in the analysis here.</p>
+
+  <h3>The construction labourer is a partial index</h3>
+
+  <p>The wages used in this brief are construction labourer wages — the rate paid to an unskilled worker on a building site, surveyed in seventeen cities. This is a real and economically important wage. It is not a comprehensive index of Pakistani labour income. It excludes agricultural day-labour, which dominates rural Sindh and southern Punjab and is typically paid at lower rates than urban construction work. It excludes domestic work, which is heavily female and largely informal. It excludes the salaried lower-middle class — clerks, teachers in private schools, administrative staff — whose monthly earnings, divided by twenty-six working days, yield daily figures that differ from construction wages in either direction depending on city and sector. Households whose primary earner is in any of these categories face days-of-work figures that differ from those reported here.</p>
+
+  <h3>Single-week prices, multi-week budgets</h3>
+
+  <p>Households do not buy the basket in a single transaction. Wheat flour is purchased monthly, mutton occasionally, eggs and milk weekly, vegetable ghee weekly, petrol on a rolling basis, lentils as needed. The basket constructed in this brief expresses what one week's worth of the canonical basket would cost; whether a working family actually consumes the basket every week depends on income, savings, and competing claims. The days-of-work figures reported here are arithmetic ratios, not behavioural claims. They describe how many days of construction labour would be required, at the reference week's prices and wages, to acquire the items listed. They do not describe how households actually allocate their time and earnings.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CLOSING                                              -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="closing">
+  <div class="closing-rule"></div>
+  <p>Pakistan's Sensitive Price Indicator, on the bulletin for the week ending 23 April 2026, reports the prices of fifty-one essential commodities and the daily wages of five construction trades across seventeen cities. The bulletin is a single weekly snapshot, published every Friday, and available continuously from the Pakistan Bureau of Statistics.</p>
+
+  <p>An eight-item household basket priced for that reference week, divided by the local construction labourer wage, returns days-of-work figures ranging from 7.77 in Lahore to 14.96 in Larkana — a ratio of 1.93×. The Lahore and Sukkur baskets, taken on their own, cost almost the same in rupee terms; the Sukkur labourer works 1.86× as many days for the basket because the wage gap between the two cities is 1.94×.</p>
+
+  <p>Sorted by who sets the price, the items in the basket arrange themselves into three persistent burden levels. Administered purchases — LPG cylinders, fuel tanks, electricity bills, atta bags — register a national median of 2.79 days. Captured-market purchases — cooking oil, ghee, mutton, beef, milk — register 1.08 days. Competitive purchases — eggs, lentils, vegetables, fruit — register 0.31 days. The ratio between the heaviest and lightest groups is approximately 9×.</p>
+
+  <p>Within Pakistan, the days-of-work geography reflects the wage axis more than the price axis. Item prices vary across the seventeen surveyed cities by single-digit-percentage multiples. Construction labourer wages vary by ratios approaching two-fold. The wage gap is what produces the work-burden gap. <em>What individual readers conclude from the description is their own work.</em></p>
+</section>
+
+<div class="byline">
+  <span>Zehra Farooq · The Public Purse · No. 03</span>
+  <span>April MMXXVI</span>
+  <span><a href="https://www.zehrafarooq.com">zehrafarooq.com</a></span>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- GLOSSARY AND SOURCES                                 -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<section class="glossary" id="glossary">
+  <div class="inner">
+    <h2>Glossary <em>&amp;</em> sources.</h2>
+
+    <h3>Key terms used in this brief</h3>
+    <dl>
+      <dt>Sensitive Price Indicator (SPI)</dt>
+      <dd>The weekly PBS bulletin tracking prices of essential commodities and daily wages of selected trades across seventeen cities. Released every Friday following the close of the reference week.</dd>
+
+      <dt>Essential commodity</dt>
+      <dd>Any of the fifty-one items in the SPI basket — staples, kitchen essentials, energy items, and selected durables.</dd>
+
+      <dt>City average price</dt>
+      <dd>The mean of minimum, average, and maximum observations recorded in each city during the reference week, as reported in Appendix-A of the SPI bulletin.</dd>
+
+      <dt>Daily wage rate</dt>
+      <dd>The prevailing rate paid to a worker in the relevant trade for one day's work in the reference city, surveyed and reported in Appendix-B Section D of the SPI bulletin.</dd>
+
+      <dt>Days of work</dt>
+      <dd>The ratio of an item's price to a labourer's daily wage. The number of days of construction labour required to acquire one unit of the item.</dd>
+
+      <dt>Basket total</dt>
+      <dd>The sum of city-level prices for an eight-item household basket, sized to typical single-purchase quantities. Reported in rupees and in days of work.</dd>
+
+      <dt>Quantity multiplier</dt>
+      <dd>The factor by which a per-unit SPI price is multiplied to give a typical household single-purchase quantity (e.g., petrol × 10 for a 10-litre tankful, milk × 5 for a five-litre weekly purchase).</dd>
+
+      <dt>Basket cost ratio</dt>
+      <dd>The ratio of basket totals between two cities, measured in rupees. Across the seventeen-city panel for the reference week, basket cost ratios fall within a narrow range.</dd>
+
+      <dt>Wage ratio</dt>
+      <dd>The ratio of construction labourer daily wages between two cities. Across the seventeen-city panel for the reference week, wage ratios approach 2×.</dd>
+
+      <dt>Work-burden ratio</dt>
+      <dd>The ratio of days-of-work figures between two cities, equal to the basket cost ratio divided by the wage ratio. In the data presented here, work-burden ratios are dominated by wage ratios.</dd>
+
+      <dt>Administered prices</dt>
+      <dd>Prices set by regulators or ministries — petrol and diesel (OGRA), LPG (OGRA-determined producer price plus marketing margin), electricity tariff (NEPRA), wheat-flour support and procurement (provincial governments).</dd>
+
+      <dt>Captured prices</dt>
+      <dd>Prices set in private-sector markets with structurally weak competition — oligopoly, professional self-regulation, or informal market structures. Includes cooking oil, vegetable ghee, mutton, beef, fresh milk, and powdered milk in this brief.</dd>
+
+      <dt>Competitive prices</dt>
+      <dd>Prices emerging from markets with many sellers, low entry barriers, and import or export discipline. Includes eggs, lentils, fruit, vegetables, and long cloth in this brief.</dd>
+
+      <dt>OGRA</dt>
+      <dd>Oil and Gas Regulatory Authority. Federal regulator for petroleum products, gas tariffs, and LPG.</dd>
+
+      <dt>NEPRA</dt>
+      <dd>National Electric Power Regulatory Authority. Federal regulator for electricity tariffs and Fuel Cost Adjustments.</dd>
+
+      <dt>Construction labourer</dt>
+      <dd>The unskilled-labour wage category surveyed in Appendix-B Section D of the SPI. Other surveyed trades — painter, mason, plumber, electrician — typically command higher rates than the labourer figure used in this brief.</dd>
+    </dl>
+
+    <h3>Primary sources</h3>
+    <p class="sources">
+      <em>Pakistan Bureau of Statistics.</em> Sensitive Price Indicator weekly bulletin, week ending 23 April 2026. Islamabad: Government of Pakistan. Appendix-A: city-level prices of essential commodities; Appendix-B Section D: daily wage rates by trade and city.<br>
+      <em>Pakistan Bureau of Statistics.</em> Sensitive Price Indicator: Methodology, Coverage, and Data Sources. Technical note, current edition.<br>
+      <em>Pakistan Bureau of Statistics.</em> Labour Force Survey, most recent round. (Reference for sectoral wage variation outside the construction trades.)
+    </p>
+
+    <h3>Regulatory references</h3>
+    <p class="sources">
+      <em>Oil and Gas Regulatory Authority (OGRA).</em> Motor fuel and LPG price notifications, fortnightly and as required, applicable in the reference week.<br>
+      <em>National Electric Power Regulatory Authority (NEPRA).</em> Tariff determinations and Fuel Cost Adjustments applicable in April 2026.<br>
+      <em>Government of Pakistan.</em> Minimum Wages (notifications), provincial and federal, applicable in 2025-26.
+    </p>
+
+    <h3>Companion brief</h3>
+    <p class="sources">
+      <em>Zehra Farooq.</em> "The Three Inflations." <em>The Public Purse</em>, No. 02, April 2026. The administered / captured / competitive grouping used in Chapter V of this brief follows the framework set out in No. 02 and is applied here at the level rather than the trajectory.
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="inner">
+    <span>The Public Purse · No. 03</span>
+    <span>An editorial project by <a href="https://www.zehrafarooq.com">Zehra Farooq</a></span>
+    <span>April MMXXVI</span>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const progress = document.getElementById('progress');
+  function updateProgress() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    progress.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress);
+  updateProgress();
+
+  // Fade in
+  requestAnimationFrame(() => document.body.classList.add('ready'));
+</script>
+
+</body>
+</html>
